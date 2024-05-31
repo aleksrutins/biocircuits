@@ -36,5 +36,8 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/josefin-sans": "^5.0.20"
+	},
+	"engines": {
+		"node": "^20.9.0"
 	}
 }
