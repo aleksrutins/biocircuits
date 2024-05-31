@@ -1,0 +1,39 @@
+<script lang="ts">
+    import { reveal, type RevealOptions } from 'svelte-reveal';
+    export let useReveal: RevealOptions;
+    export let href: string;
+</script>
+
+<a use:reveal={useReveal} href={href}>
+    <span><slot></slot></span>
+    <svg xmlns="http://www.w3.org/2000/svg" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path font-weight="bold" stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg>
+      
+</a>
+
+<style>
+    a {
+        display: block;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-decoration: none !important;
+        text-transform: uppercase;
+        color: inherit;
+        border: 2px solid;
+        transition-property: color border-color background-color;
+        transition-duration: .5s;
+    }
+    a span, a svg {
+        vertical-align: text-top;
+    }
+    a svg {
+        float: right;
+    }
+    a:hover {
+        color: white;
+        border-color: black;
+        background-color: black;
+    }
+</style>
