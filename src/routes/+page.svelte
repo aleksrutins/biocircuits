@@ -3,6 +3,7 @@
 	import welcome from '$lib/images/biocircuitslogo.svg';
 	import { reveal } from 'svelte-reveal';
 	import SectionLink from './SectionLink.svelte';
+	import 'svelte-reveal/styles.css'
 </script> 
 
 <svelte:head>
@@ -17,19 +18,19 @@
 		</span>
 	</h1>
 
-	<p use:reveal>
+	<p use:reveal class="sr__hide">
 		Biological circuit design is the science of abstracting <em>natural</em> biological processes by defining them
 		as you would any synthetic circuit. It also allows us to create our own circuits out of natural components.
 		As <a href="https://biocircuits.github.io">CalTech's open-source Biocircuits course</a> states:
 	</p>
 	
-	<blockquote use:reveal={{delay: 2000}}>
+	<blockquote use:reveal={{delay: 2000}} class="sr__hide">
 		Indeed, the marvelous progression of electronic circuit capabilities [...] could well describe biological circuits decades from now. Like electronics, we may will soon be able to program cellular “miracle devices” to create “little gadgets” that address serious environmental and medical applications.
 	</blockquote>
 
-	<p use:reveal={{delay: 4000}}>That CalTech course will be the main source for this presentation.</p>
+	<p use:reveal={{delay: 4000}} class="sr__hide">That CalTech course will be the main source for this presentation.</p>
 
-	<p use:reveal={{delay: 5000}}>Let's dive in!</p>
+	<p use:reveal={{delay: 5000}} class="sr__hide">Let's dive in!</p>
 
 	<SectionLink useReveal={{delay: 5500}} href="/concepts">1. Concepts of Biocircuits</SectionLink>
 	<SectionLink useReveal={{delay: 5550}} href="/simplest-circuit">2. The Simplest Circuit</SectionLink>

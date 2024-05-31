@@ -4,7 +4,7 @@
     export let href: string;
 </script>
 
-<a use:reveal={useReveal} href={href}>
+<a use:reveal={useReveal} href={href} class="sr__hide">
     <span><slot></slot></span>
     <svg xmlns="http://www.w3.org/2000/svg" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
         <path font-weight="bold" stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
