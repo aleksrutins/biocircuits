@@ -18,6 +18,7 @@
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "^8.56.7",
+		"@types/katex": "^0.16.7",
 		"eslint": "^9.0.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
@@ -35,7 +36,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/josefin-sans": "^5.0.20"
+		"@fontsource/josefin-sans": "^5.0.20",
+		"katex": "^0.16.10"
 	},
 	"engines": {
 		"node": "^20.9.0"
