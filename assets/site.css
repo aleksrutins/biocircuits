@@ -137,6 +137,7 @@ footer {
     padding: 12px;
     margin-top: 25px;
     border-top: 1px solid var(--color-text);
+    text-align: center;
 }
 
 @media (min-width: 480px) {
