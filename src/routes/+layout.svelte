@@ -1,12 +1,29 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+	import { onNavigate } from '$app/navigation';
+
+	onNavigate((navigation) => {
+		// @ts-ignore
+		if (!document.startViewTransition) return;
+
+		return new Promise((resolve) => {
+			// @ts-ignore
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <div class="app">
 
 	<main>
 		<slot />
+		<footer>
+			&copy; 2024 Aleks Rūtiņš
+		</footer>
 	</main>
 </div>
 
@@ -14,7 +31,6 @@
 	.app {
 		display: flex;
 		flex-direction: column;
-		min-height: 100vh;
 	}
 
 	main {
@@ -34,6 +50,8 @@
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
+		margin-top: 25px;
+		border-top: 1px solid var(--color-text);
 	}
 
 	footer a {

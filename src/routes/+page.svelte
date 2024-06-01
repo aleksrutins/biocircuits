@@ -12,11 +12,10 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<img src={welcome} alt="Welcome" />
-		</span>
+	<h1 class="welcome">
+		<img src={welcome} alt="Welcome" />
 	</h1>
+	<p class="tagline">for mere mortals</p>
 
 	<p use:reveal class="sr__hide">
 		Biological circuit design is the science of abstracting <em>natural</em> biological processes by defining them
@@ -43,18 +42,21 @@
 	}
 
 	.welcome {
-		display: block;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 		position: relative;
 		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
 	}
 
 	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
 		display: block;
+	}
+
+	.tagline {
+		align-self: center;
+		font-style: italic;
+		margin-top: -10px;
 	}
 </style>
