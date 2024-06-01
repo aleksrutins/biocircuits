@@ -5,26 +5,64 @@
 		<img src="/assets/biocircuitslogo.svg" alt="Biological Circuits" />
 	</h1>
 	<p class="tagline">for mere mortals</p>
+    <p class="tagline">(albeit ones who know a bit of differential calculus)</p>
 
-	<p>
+	<p class="fade">
 		Biological circuit design is the science of abstracting <em>natural</em> biological processes by defining them
-		as you would any synthetic circuit. It also allows us to create our own circuits out of natural components.
+		as you would any synthetic circuit. It also allows us   to create our own circuits out of natural components.
 		As <a href="https://biocircuits.github.io">CalTech's open-source Biocircuits course</a> states:
 	</p>
 	
-	<blockquote>
+	<blockquote class="fade fade2">
 		Indeed, the marvelous progression of electronic circuit capabilities [...] could well describe biological circuits decades from now. Like electronics, we may will soon be able to program cellular “miracle devices” to create “little gadgets” that address serious environmental and medical applications.
 	</blockquote>
 
-	<p>That CalTech course will be the main source for this presentation.</p>
+	<p class="fade fade3">That CalTech course will be the main source for this presentation.</p>
 
-	<p>Let's dive in!</p>
+	<p class="fade fade4">Let's dive in!</p>
 
-	<section-link href="/concepts.html">1. Concepts of Biocircuits</section-link>
-	<section-link href="/simplest-circuit.html">2. The Simplest Circuit</section-link>
+    <div class="fade fade5">
+        <section-link href="/concepts.html">1. Concepts of Biocircuits</section-link>
+        <section-link href="/simplest-circuit.html">2. The Simplest Circuit</section-link>
+    </div>
 </section>
 
+<script>
+    if(localStorage.getItem('faded')) 
+        document.querySelectorAll('.fade').forEach(it =>
+            it.classList.add('no-delay'));
+    localStorage.setItem('faded', true);
+</script>
+
 <style>
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .fade {
+        opacity: 0;
+        animation: fade .5s linear 0s 1 forwards normal;
+    }
+    .fade2 {
+        animation-delay: 2s;
+    }
+    .fade3 {
+        animation-delay: 4s;
+    }
+    .fade4 {
+        animation-delay: 4.25s;
+    }
+    .fade5 {
+        animation-delay: 4.5s;
+    }
+    .fade.no-delay {
+        animation-delay: 0s !important;
+    }
+
 	h1 {
 		width: 100%;
 	}
@@ -40,6 +78,7 @@
 
 	.welcome img {
 		display: block;
+        opacity: 0.7;
 	}
 
 	.tagline {

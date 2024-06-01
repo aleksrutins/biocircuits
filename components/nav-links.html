@@ -1,0 +1,29 @@
+<nav>
+    <a [href]="back">BACK</a>
+    <a href="/">HOME</a>
+    <a [href]="next">NEXT</a>
+</nav>
+
+<style>
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    a {
+        color: var(--color-theme-1);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition-property: border-color;
+        transition-duration: .5s;
+    }
+
+    a:hover {
+        border-color: var(--color-theme-1);
+    }
+</style>

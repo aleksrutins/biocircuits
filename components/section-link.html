@@ -1,6 +1,6 @@
 <a [href]="href">
     <span><slot></slot></span>
-    <svg xmlns="http://www.w3.org/2000/svg" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
         <path font-weight="bold" stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
       </svg>
       
@@ -8,7 +8,10 @@
 
 <style>
     a {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -20,10 +23,7 @@
         transition-duration: .5s;
     }
     a span, a svg {
-        vertical-align: text-top;
-    }
-    a svg {
-        float: right;
+        display: block;
     }
     a:hover {
         color: white;
