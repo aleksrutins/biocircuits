@@ -104,7 +104,7 @@ button:focus:not(:focus-visible) {
 blockquote {
 	margin: 14px 0 14px 0;
 	padding: 2px 50px 2px 15px;
-	border-left: 2px solid #4075a6;
+	border-left: 2px solid var(--color-text);
 	font-style: italic;
 }
 
