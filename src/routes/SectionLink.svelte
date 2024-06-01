@@ -22,7 +22,7 @@
         text-transform: uppercase;
         color: inherit;
         border: 2px solid;
-        transition-property: color border-color background-color;
+        transition-property: color, border-color, background-color;
         transition-duration: .5s;
     }
     a span, a svg {
