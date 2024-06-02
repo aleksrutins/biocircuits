@@ -31,7 +31,7 @@ You've reached the end, for now. I hope to expand this site in the future. If yo
 
 [^2] Shinar, G., Dekel, E., Tlusty, T., & Alon, U. (2006). Rules for biological regulation based on error minimization. Proceedings of the National Academy of Sciences, 103(11), 3999–4004. <https://doi.org/10.1073/pnas.0506610103>
 
-[^3] Gerland, U., & Hwa, T. (2009). Evolutionary selection between alternative modes of gene regulation. Proceedings of the National Academy of Sciences, 106(22), 8841–8846. https://doi.org/10.1073/pnas.0808500106
+[^3] Gerland, U., & Hwa, T. (2009). Evolutionary selection between alternative modes of gene regulation. Proceedings of the National Academy of Sciences, 106(22), 8841–8846. <https://doi.org/10.1073/pnas.0808500106>
 
 </section>
 
