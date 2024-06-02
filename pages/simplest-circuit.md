@@ -26,7 +26,7 @@ $$ \frac{dx}{dt} = \text{production} - (\text{degradation} + \text{dilution}) $$
 Or:
 $$ \frac{dx}{dt} = \beta - \gamma x $$
 Since \\(\gamma\\) counts both degradation and dilution, we can say that:
-$$ \gamma = \gamma_\text{degradation} - \gamma_\text{dilution} $$
+$$ \gamma = \gamma_\text{degradation} + \gamma_\text{dilution} $$
 
 Since we're getting into the math, a quick tip: if you (like me) forget what a variable does halfway through the page, just hover over it and it'll tell you what it does. Anyway, back to the show.
 
