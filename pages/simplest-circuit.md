@@ -1,6 +1,6 @@
 <extends template="layouts/base.html" title="The Simplest Circuit"></extends>
 
-<nav-links back="/concepts.html"></nav-links>
+<nav-links back="/concepts.html" next="/repressors.html"></nav-links>
 
 # The Simplest Circuit
 
@@ -96,7 +96,7 @@ Here's a graph to play with:
 
 Onwards!
 
-<nav-links back="/concepts.html"></nav-links>
+<nav-links back="/concepts.html" next="/repressors.html"></nav-links>
 
 <script>
     plot('#concentration-graph', (beta, gamma) => `(${beta}x)/${gamma}`, ['#beta', '#gamma'])
