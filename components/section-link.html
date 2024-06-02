@@ -18,16 +18,24 @@
         text-decoration: none !important;
         text-transform: uppercase;
         color: inherit;
+        background-image: linear-gradient(135deg,
+            black 0%,
+            black 50%,
+            transparent 50%,
+            transparent 100%
+        );
+        background-size: 250%;
+        background-position: 90% 90%;
         border: 2px solid;
-        transition-property: color, border-color, background-color;
-        transition-duration: .5s;
+        transition-property: color, border-color, background-position;
+        transition-duration: .75s;
     }
     a span, a svg {
         display: block;
     }
     a:hover {
         color: white;
+        background-position: 0% 0%;
         border-color: black;
-        background-color: black;
     }
 </style>
