@@ -31,7 +31,7 @@ This function has two parameters:
     </div>
 </div>
 
-To find production rates with the Hill function, just add $\beta_0$:
+To find production rates with the Hill function, just multiply by $\beta_0$:
 
 - Activator (shown in blue): $\beta(a)=\beta_0f_\text{act}(a)=\beta_0\frac{(a/k)^n}{1 + (a/k)^n}$
 - Repressor (shown in red): $\beta(r)=\beta_0f_\text{rep}(r)=\beta_0\frac{1}{1 + (r/k)^n}$
