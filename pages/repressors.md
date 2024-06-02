@@ -8,7 +8,7 @@ Theoretically, a single gene could keep producing a single protein indefinitely,
 
 **Repressors** enable gene regulation. They bind to specific binding sites at or near the promoter of a gene (remember, that's where transcription starts) and inhibit transcription initiation. An example of this in bacteria is the Lacl repressor in _E. coli_. Normally, it inhibits the gene for lactase production. When lactose is present, though, a modified form of lactose (allolactose) binds to Lacl, and prevents it from inhibiting lactase production. Lactase is then produced, and the lactose is digested. Lacl is then free to bind to the gene again, inhibiting lactase production until the next time lactose appears.
 
-Binding and unbiunding a repressor can be modeled through this chemical equation:
+Binding and unbinding a repressor can be modeled through this chemical equation:
 
 $$\ce{P + R <=>[k_+][k_-] P_\mathrm{bound}}$$
 
