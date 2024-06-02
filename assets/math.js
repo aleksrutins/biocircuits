@@ -12,17 +12,18 @@ function defineVars(vars) {
     });
 }
 
-function plot(target, fns, deps) {
+function plot(target, fns, deps, [xDomain, yDomain] = [[-1, 9], [-1, 9]]) {
     const depsEl = deps.map(document.querySelector.bind(document));
     const plot = () => {
         functionPlot({
             target,
             width: 600,
             height: 400,
-            yAxis: { domain: [-1, 9] },
+            xAxis: { domain: xDomain },
+            yAxis: { domain: yDomain },
             grid: true,
             data: fns(...(depsEl.map(el => parseFloat(el.value)))).map(fn => ({
-                    fn
+                    fn, graphType: 'polyline'
                 }))
         });
     }

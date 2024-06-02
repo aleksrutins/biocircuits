@@ -8,6 +8,11 @@ Theoretically, a single gene could keep producing a single protein indefinitely,
 
 **Repressors** enable gene regulation. They bind to specific binding sites at or near the promoter of a gene (remember, that's where transcription starts) and inhibit transcription initiation. An example of this in bacteria is the Lacl repressor in _E. coli_. Normally, it inhibits the gene for lactase production. When lactose is present, though, a modified form of lactose (allolactose) binds to Lacl, and prevents it from inhibiting lactase production. Lactase is then produced, and the lactose is digested. Lacl is then free to bind to the gene again, inhibiting lactase production until the next time lactose appears.
 
+Here's a diagram, with the repressor labeled R:
+
+![A diagram of a gene with and without a repressor.](/assets/repressor-dg.png)
+<i class="cite">Credit: CalTech</i>
+
 Binding and unbinding a repressor can be modeled through this chemical equation:
 
 $$\ce{P + R <=>[k_+][k_-] P_\mathrm{bound}}$$
@@ -80,7 +85,7 @@ Onwards!
 <nav-links back="/simplest-circuit.html" next="/activators.html"></nav-links>
 
 <script>
-    plot('#binding-curve', (kd, beta0) => [`${beta0}/(1 + x/(${kd}))`, `-(${beta0})x/(${kd}) + ${beta0}`], ['#kd', '#beta0'])
+    plot('#binding-curve', (kd, beta0) => [`${beta0}/(1 + x/(${kd}))`, `-(${beta0})x/(${kd}) + ${beta0}`], ['#kd', '#beta0'], [[0, 10], [0, 10]])
 
-    plot('#binding-curve-leaky', (kd, beta0, alpha0) => [`${beta0}/(1 + x/(${kd})) + ${alpha0}`, `-(${beta0})x/(${kd}) + ${beta0} + ${alpha0}`], ['#leaky-kd', '#leaky-beta0', '#leaky-alpha0'])
+    plot('#binding-curve-leaky', (kd, beta0, alpha0) => [`${beta0}/(1 + x/(${kd})) + ${alpha0}`, `-(${beta0})x/(${kd}) + ${beta0} + ${alpha0}`], ['#leaky-kd', '#leaky-beta0', '#leaky-alpha0'], [[0, 10], [0, 10]])
 </script>
