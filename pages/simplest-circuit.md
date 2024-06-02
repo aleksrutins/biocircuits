@@ -94,13 +94,13 @@ Here's a graph to play with:
     </div>
 </div>
 
-Onwards!
+It's still a line. Onwards!
 
 <nav-links back="/concepts.html" next="/repressors.html"></nav-links>
 
 <script>
-    plot('#concentration-graph', (beta, gamma) => `(${beta}x)/${gamma}`, ['#beta', '#gamma'])
-    plot('#concentration-graph-2step', (betap, gammap, betam, gammam) => `((${betap})(${betam})x)/((${gammap})(${gammam}))`, ['#betap', '#gammap', '#betam', '#gammam'])
+    plot('#concentration-graph', (beta, gamma) => [`(${beta}x)/${gamma}`], ['#beta', '#gamma'])
+    plot('#concentration-graph-2step', (betap, gammap, betam, gammam) => [`((${betap})(${betam})x)/((${gammap})(${gammam}))`], ['#betap', '#gammap', '#betam', '#gammam'])
     defineVars([
         ['γ', 'The rate constant for reduction of concentration.'],
         ['β', 'The rate of production, in molecules per unit time.'],

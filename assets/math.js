@@ -12,7 +12,7 @@ function defineVars(vars) {
     });
 }
 
-function plot(target, fn, deps) {
+function plot(target, fns, deps) {
     const depsEl = deps.map(document.querySelector.bind(document));
     const plot = () => {
         functionPlot({
@@ -21,11 +21,9 @@ function plot(target, fn, deps) {
             height: 400,
             yAxis: { domain: [-1, 9] },
             grid: true,
-            data: [
-                {
-                    fn: fn(...(depsEl.map(el => el.value)))
-                }
-            ]
+            data: fns(...(depsEl.map(el => parseFloat(el.value)))).map(fn => ({
+                    fn
+                }))
         });
     }
 
