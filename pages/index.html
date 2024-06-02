@@ -7,6 +7,8 @@
 	<p class="tagline">for mere mortals</p>
     <p class="tagline">(albeit ones who know a bit of differential calculus)</p>
 
+    <p><strong>DISCLAIMER: This is a school project. I would like to think that the CalTech course I've drawn from has made me somewhat knowledgeable on this topic, but please do not use this for medical advice, etc., etc. If you happen to know what you are doing, and you find a mistake on this website, please <a href="https://github.com/aleksrutins/biocircuits/issues/new">tell me about it</a>. With that said:</a></strong></p>
+
 	<p class="fade">
 		Biological circuit design is the science of abstracting <em>natural</em> biological processes by defining them
 		as you would any synthetic circuit. It also allows us   to create our own circuits out of natural components.
@@ -17,7 +19,7 @@
 		Indeed, the marvelous progression of electronic circuit capabilities [...] could well describe biological circuits decades from now. Like electronics, we may will soon be able to program cellular “miracle devices” to create “little gadgets” that address serious environmental and medical applications.
 	</blockquote>
 
-	<p class="fade fade3">That CalTech course will be the main source for this presentation.</p>
+	<p class="fade fade3">That CalTech course will be the main source for this presentation. All diagrams are from it.</p>
 
 	<p class="fade fade4">Let's dive in!</p>
 
@@ -28,23 +30,28 @@
 </section>
 
 <script>
-    if(localStorage.getItem('faded')) 
-        document.querySelectorAll('.fade').forEach(it =>
-            it.classList.add('no-delay'));
-    localStorage.setItem('faded', true);
+    addEventListener('DOMContentLoaded', () => {
+        if(localStorage.getItem('faded')) 
+            document.querySelectorAll('.fade').forEach(it =>
+                it.classList.add('no-delay'));
+        localStorage.setItem('faded', true);
+    });
 </script>
 
 <style>
     @keyframes fade {
         0% {
             opacity: 0;
+            pointer-events: none;
         }
         100% {
             opacity: 1;
+            pointer-events: all;
         }
     }
     .fade {
         opacity: 0;
+        pointer-events: none;
         animation: fade .5s linear 0s 1 forwards normal;
     }
     .fade2 {
