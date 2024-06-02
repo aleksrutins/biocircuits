@@ -59,4 +59,16 @@ Onwards!
 <script>
     plot('#hill-graph', (k, n) => [`((x/${k})^(${n}))/(1 + ((x/${k})^(${n})))`, `1/(1 + ((x/${k})^(${n})))`], ['#k', '#n'], [[0, 10], [0, 1]])
     plot('#hill-graph-prod', (k, n, b0) => [`(${b0}) * ((x/${k})^(${n}))/(1 + ((x/${k})^(${n})))`, `(${b0})/(1 + ((x/${k})^(${n})))`], ['#k-prod', '#n-prod', '#b0'], [[0, 10], [0, 10]])
+
+    defineVars([
+        ['f', 'The Hill function.'],
+        ['P', 'The promoter of the DNA.'],
+        ['A', 'The activator.'],
+        ['p', 'A concentration of promoters, either unbound, bound (pbound), or total (ptot).'],
+        ['k', 'The concentration at which the function attains half of its maximum value.'],
+        ['n', 'The Hill coefficient, a measurement of how ultrasensitive the response is.'],
+        ['β', 'β(x) is the simple binding curve. β0 is the maximum expression level.'],
+        ['r', 'The concentration of repressor.'],
+        ['a', 'The concentration of activator.']
+    ])
 </script>

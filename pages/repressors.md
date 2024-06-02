@@ -27,7 +27,7 @@ Specifically, if \\(p_\text{tot}\\) is the total concentration of promoters, bot
 
 $$\frac{p}{p_\text{tot}}=\frac1{(1+r/K_d)}$$
 
-Where \\(K_d\\) is the **dissociation constant** &mdash; a measurement of the likelyhood that a repressor will unbind from its binding site &mdash; calculated as \\(\frac{k_-}{k_+}\\). Becayse we have a separation of timescales and can simplify things, the rate of production of gene product should be proportional to the probability of the promoter being unbound:
+Where \\(K_d\\) is the **dissociation constant** &mdash; a measurement of the likelyhood that a repressor will unbind from its binding site &mdash; calculated as \\(\frac{k_-}{k_+}\\). Because we have a separation of timescales and can simplify things, the rate of production of gene product should be proportional to the probability of the promoter being unbound:
 
 $$\beta(r)=\beta_0\frac{p}{p_\text{tot}}=\frac{\beta_0}{1 + r/K_d}$$
 
@@ -53,7 +53,7 @@ For small values of \\(r\\), note that the slope is \\(-\frac{\beta_0}{K_d}\\). 
 
 ## Leaky expression
 
-Unfortunately, repressors aren't perfect. Many genes can never get entirely repressed, and have a baseline, or "basal", level or expression. We can represent this by adding another term, $\alpha_0$, to $\beta(r)$:
+Unfortunately, repressors aren't perfect. Many genes can never be entirely repressed, and have a baseline, or "basal", level or expression. We can represent this by adding another term, $\alpha_0$, to $\beta(r)$:
 
 $$\beta(r)=\frac{\beta_0}{1 + r/K_d}+\alpha_0$$
 
@@ -88,4 +88,15 @@ Onwards!
     plot('#binding-curve', (kd, beta0) => [`${beta0}/(1 + x/(${kd}))`, `-(${beta0})x/(${kd}) + ${beta0}`], ['#kd', '#beta0'], [[0, 10], [0, 10]])
 
     plot('#binding-curve-leaky', (kd, beta0, alpha0) => [`${beta0}/(1 + x/(${kd})) + ${alpha0}`, `-(${beta0})x/(${kd}) + ${beta0} + ${alpha0}`], ['#leaky-kd', '#leaky-beta0', '#leaky-alpha0'], [[0, 10], [0, 10]])
+
+    defineVars([
+        ['P', 'The promoter of the DNA.'],
+        ['R', 'The repressor.'],
+        ['p', 'A concentration of promoters, either unbound, bound (pbound), or total (ptot).'],
+        ['x', 'The gene in question.'],
+        ['K', 'Kd is the dissociation constant, a measure of the likelihood that the repressor will unbind.'],
+        ['β', 'β(x) is the simple binding curve. β0 is the maximum expression level.'],
+        ['r', 'The concentration of repressor.'],
+        ['α', 'α0 is the baseline, or "basal", level of expression of the gene.']
+    ])
 </script>

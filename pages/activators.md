@@ -35,4 +35,14 @@ That was a short section. Onward!
 
 <script>
     plot('#binding-curve', (kd, beta0) => [`${beta0}/(1 + x/(${kd}))`, `${beta0} * ((x/${kd})/(1 + (x/${kd})))`], ['#kd', '#beta0'], [[0, 10], [0, 10]])
+
+    defineVars([
+        ['P', 'The promoter of the DNA.'],
+        ['A', 'The activator.'],
+        ['p', 'A concentration of promoters, either unbound, bound (pbound), or total (ptot).'],
+        ['x', 'The gene in question.'],
+        ['K', 'Kd is the dissociation constant, a measure of the likelihood that the activator will unbind.'],
+        ['β', 'β(x) is the simple binding curve. β0 is the maximum expression level.'],
+        ['a', 'The concentration of activator.']
+    ])
 </script>

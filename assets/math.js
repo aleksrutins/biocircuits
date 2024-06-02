@@ -2,7 +2,7 @@ function defineVars(vars) {
     const data = new Map(vars);
 
     window.addEventListener('DOMContentLoaded', () => {
-        const mathVars = document.querySelectorAll('span.katex span.mord.mathnormal');
+        const mathVars = document.querySelectorAll('span.katex span.mord');
 
         mathVars.forEach(el => {
             for (const [v, help] of data.entries()) {

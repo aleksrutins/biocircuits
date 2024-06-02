@@ -28,7 +28,7 @@ $$ \frac{dx}{dt} = \beta - \gamma x $$
 Since \\(\gamma\\) counts both degradation and dilution, we can say that:
 $$ \gamma = \gamma_\text{degradation} + \gamma_\text{dilution} $$
 
-Since we're getting into the math, a quick tip: if you (like me) forget what a variable does halfway through the page, just hover over it and it'll tell you what it does. Anyway, back to the show.
+Since we're getting into the math, a quick tip: if you (like me) forget what a variable does halfway through the page, just hover over it and it'll tell you what it does. Because of the way it's rendered, it might not work in some cases, but feel free to try it. Anyway, back to the show.
 
 To find the net production of the protein under steady state conditions, set the derivative to zero and solve for \\(x\\):
 
