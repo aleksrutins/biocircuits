@@ -1,6 +1,4 @@
-<extends template="layouts/base.html" title="Repressors & Leaks"></extends>
-
-<nav-links back="/simplest-circuit.html" next="/activators.html"></nav-links>
+<extends template="layouts/page.html" back="/simplest-circuit.html" next="/activators.html" title="Repressors & Leaks"></extends>
 
 # Repressors & Leaks
 
@@ -81,8 +79,6 @@ Why does this happen, you ask? There are a couple of reasons:
 Because leaks are so common, it's important to make sure that important parts of your circuits don't depend on the complete absence of leaky expression.
 
 Onwards!
-
-<nav-links back="/simplest-circuit.html" next="/activators.html"></nav-links>
 
 <script>
     plot('#binding-curve', (kd, beta0) => [`${beta0}/(1 + x/(${kd}))`, `-(${beta0})x/(${kd}) + ${beta0}`], ['#kd', '#beta0'], [[0, 10], [0, 10]])

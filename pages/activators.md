@@ -1,6 +1,4 @@
-<extends template="layouts/base.html" title="Activators"></extends>
-
-<nav-links back="/repressors.html" next="/hill-functions.html"></nav-links>
+<extends template="layouts/page.html" back="/repressors.html" next="/hill-functions.html" title="Activators"></extends>
 
 # Activators
 
@@ -30,8 +28,6 @@ $$\beta(a)=\beta_0\frac{p_\text{bound}}{p_\text{tot}}=\beta_0\frac{a/K_d}{1 + a/
 As you can see, an activator has exactly the opposite effect as a repressor.
 
 That was a short section. Onward!
-
-<nav-links back="/repressors.html" next="/hill-functions.html"></nav-links>
 
 <script>
     plot('#binding-curve', (kd, beta0) => [`${beta0}/(1 + x/(${kd}))`, `${beta0} * ((x/${kd})/(1 + (x/${kd})))`], ['#kd', '#beta0'], [[0, 10], [0, 10]])

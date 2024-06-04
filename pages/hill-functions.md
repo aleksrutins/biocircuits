@@ -1,6 +1,4 @@
-<extends template="layouts/base.html" title="Ultrasensitivity & the Hill Function"></extends>
-
-<nav-links back="/activators.html" next="/activators-vs-repressors.html"></nav-links>
+<extends template="layouts/page.html" back="/activators.html" next="/activators-vs-repressors.html" title="Ultrasensitivity & the Hill Function"></extends>
 
 # Ultrasensitivity & the Hill Function
 
@@ -53,8 +51,6 @@ To find production rates with the Hill function, just multiply by $\beta_0$:
 </div>
 
 Onwards!
-
-<nav-links back="/activators.html" next="/activators-vs-repressors.html"></nav-links>
 
 <script>
     plot('#hill-graph', (k, n) => [`((x/${k})^(${n}))/(1 + ((x/${k})^(${n})))`, `1/(1 + ((x/${k})^(${n})))`], ['#k', '#n'], [[0, 10], [0, 1]])

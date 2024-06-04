@@ -1,6 +1,4 @@
-<extends template="layouts/base.html" title="Concepts of Biocircuits"></extends>
-
-<nav-links next="/simplest-circuit.html"></nav-links>
+<extends template="layouts/page.html" next="/simplest-circuit.html" title="Concepts of Biocircuits"></extends>
 
 # Concepts of Biocircuits
 
@@ -26,5 +24,3 @@ Again, though, even though we know a lot about biocircuit design, there are stil
 In theory, natural and synthetic circuits _should_ share a common set of design principles. These principles are generally expressed as a statement: _Circuit feature X enables function Y_. We know a few already, but new ones are still being discovered.
 
 That's the introduction. Onward - let's design a circuit!
-
-<nav-links next="/simplest-circuit.html"></nav-links>

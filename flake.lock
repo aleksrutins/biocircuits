@@ -8,17 +8,16 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1714783491,
-        "narHash": "sha256-4pUXleYQZpKJep7wwNJo6QuXV8/pk28JC4VzN1uoNh0=",
-        "owner": "aleksrutins",
-        "repo": "cheetah",
-        "rev": "3b0db8cf3b3e86dfb0f3503c54f655c831fdc359",
-        "type": "github"
+        "lastModified": 1717535613,
+        "narHash": "sha256-nyppnrB7J1RaeqCaH6O22QsC/c+N0LTNXw3XgsPzxFg=",
+        "rev": "1b42da203e960f6cad517ad80e0e2dcf5625e884",
+        "revCount": 67,
+        "type": "tarball",
+        "url": "https://api.flakehub.com/f/pinned/aleksrutins/cheetah/0.2.3/018fe51b-41d1-7c39-af34-e6ff00a655b2/source.tar.gz"
       },
       "original": {
-        "owner": "aleksrutins",
-        "repo": "cheetah",
-        "type": "github"
+        "type": "tarball",
+        "url": "https://flakehub.com/f/aleksrutins/cheetah/0.2.3.tar.gz"
       }
     },
     "flake-utils": {

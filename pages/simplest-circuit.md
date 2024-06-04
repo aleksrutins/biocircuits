@@ -1,6 +1,4 @@
-<extends template="layouts/base.html" title="The Simplest Circuit"></extends>
-
-<nav-links back="/concepts.html" next="/repressors.html"></nav-links>
+<extends template="layouts/page.html" back="/concepts.html" next="/repressors.html" title="The Simplest Circuit"></extends>
 
 # The Simplest Circuit
 
@@ -95,8 +93,6 @@ Here's a graph to play with:
 </div>
 
 It's still a line. Onwards!
-
-<nav-links back="/concepts.html" next="/repressors.html"></nav-links>
 
 <script>
     plot('#concentration-graph', (beta, gamma) => [`(${beta}x)/${gamma}`], ['#beta', '#gamma'])

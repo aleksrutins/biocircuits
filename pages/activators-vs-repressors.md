@@ -1,6 +1,4 @@
-<extends template="layouts/base.html" title="Choosing Between Activators & Repressors"></extends>
-
-<nav-links back="/hill-functions.html"></nav-links>
+<extends template="layouts/page.html" back="/hill-functions.html" title="Choosing Between Activators & Repressors"></extends>
 
 # Choosing Between Activators & Repressors
 
@@ -34,5 +32,3 @@ You've reached the end, for now. I hope to expand this site in the future. If yo
 [^3] Gerland, U., & Hwa, T. (2009). Evolutionary selection between alternative modes of gene regulation. Proceedings of the National Academy of Sciences, 106(22), 8841–8846. <https://doi.org/10.1073/pnas.0808500106>
 
 </section>
-
-<nav-links back="/hill-functions.html"></nav-links>
