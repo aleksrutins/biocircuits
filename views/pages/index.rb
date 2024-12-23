@@ -59,14 +59,14 @@ EOF
               end
 
               script {
-                "
+                unsafe_raw("
                 addEventListener('DOMContentLoaded', () => {
                     if(localStorage.getItem('faded'))
                         document.querySelectorAll('.fade').forEach(it =>
                             it.classList.add('no-delay'));
                     localStorage.setItem('faded', true);
                 });
-                "
+                ")
               }
             end
           end
