@@ -23,12 +23,9 @@ At this point, we're pretty sure that, in the majority of cases, regulators are 
 
 You've reached the end, for now. I hope to expand this site in the future. If you have any questions, comments, or suggestions, please feel free to [tell me about them](https://github.com/aleksrutins/biocircuits/issues/new).
 
-<section class="footnotes">
 
-[^1] Savageau, M. A. (1977). Design of molecular control mechanisms and the demand for gene expression. Proceedings of the National Academy of Sciences, 74(12), 5647–5651. <https://doi.org/10.1073/pnas.74.12.5647>
+[^1]: Savageau, M. A. (1977). Design of molecular control mechanisms and the demand for gene expression. Proceedings of the National Academy of Sciences, 74(12), 5647–5651. <https://doi.org/10.1073/pnas.74.12.5647>
 
-[^2] Shinar, G., Dekel, E., Tlusty, T., & Alon, U. (2006). Rules for biological regulation based on error minimization. Proceedings of the National Academy of Sciences, 103(11), 3999–4004. <https://doi.org/10.1073/pnas.0506610103>
+[^2]: Shinar, G., Dekel, E., Tlusty, T., & Alon, U. (2006). Rules for biological regulation based on error minimization. Proceedings of the National Academy of Sciences, 103(11), 3999–4004. <https://doi.org/10.1073/pnas.0506610103>
 
-[^3] Gerland, U., & Hwa, T. (2009). Evolutionary selection between alternative modes of gene regulation. Proceedings of the National Academy of Sciences, 106(22), 8841–8846. <https://doi.org/10.1073/pnas.0808500106>
-
-</section>
+[^3]: Gerland, U., & Hwa, T. (2009). Evolutionary selection between alternative modes of gene regulation. Proceedings of the National Academy of Sciences, 106(22), 8841–8846. <https://doi.org/10.1073/pnas.0808500106>

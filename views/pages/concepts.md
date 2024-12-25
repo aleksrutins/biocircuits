@@ -1,5 +1,3 @@
-<extends template="layouts/page.html" next="/simplest-circuit.html" title="Concepts of Biocircuits"></extends>
-
 # Concepts of Biocircuits
 
 Before we start designing circuits, we need to talk about **natural** (evolved) circuits and **synthetic** circuits.

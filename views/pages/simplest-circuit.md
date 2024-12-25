@@ -21,8 +21,10 @@ However, in real life, proteins aren't just made forever; they're also reduced, 
 
 There's a differential equation for this:
 $$ \frac{dx}{dt} = \text{production} - (\text{degradation} + \text{dilution}) $$
+
 Or:
 $$ \frac{dx}{dt} = \beta - \gamma x $$
+
 Since \\(\gamma\\) counts both degradation and dilution, we can say that:
 $$ \gamma = \gamma_\text{degradation} + \gamma_\text{dilution} $$
 
@@ -31,8 +33,11 @@ Since we're getting into the math, a quick tip: if you (like me) forget what a v
 To find the net production of the protein under steady state conditions, set the derivative to zero and solve for \\(x\\):
 
 $$0 = \beta - \gamma x$$
+
 $$-\beta = -\gamma x$$
+
 $$\frac{-\beta}{-\gamma} = x$$
+
 $$\frac\beta\gamma = x$$
 
 And we find that **steady-state protein concentration is proportional to the ratio of production and removal rates**. This is another core concept that should be built as intuition.
@@ -65,11 +70,13 @@ Right now, we have protein synthesis as one process &mdash; no intermediate step
 The reaction can now be described by two coupled differential equations:
 
 $$\frac{dm}{dt} = \beta_m - \gamma_mm$$
+
 $$\frac{dx}{dt} = \beta_pm - \gamma_px$$
 
 Now, to find steady-state mRNA and protein concentrations, we set both derivatives to zero and solve, giving us:
 
 $$m_{ss}=\frac{\beta_m}{\gamma_m}$$
+
 $$x_{ss}=\frac{\beta_pm_{ss}}{\gamma_p}=\frac{\beta_p\beta_m}{\gamma_p\gamma_m}$$
 
 This tells us that steady-state protein concentration, when we consider transcription and translation as separate steps, is proportional to the product of the two synthesis rates and inversely proportional to the product of the two degradation rates. Again, if you think about it, that's pretty intuitive.
