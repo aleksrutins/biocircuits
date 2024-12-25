@@ -40,7 +40,7 @@ For small values of \\(r\\), note that the slope is \\(-\frac{\beta_0}{K_d}\\). 
 <div class="graph">
     <div id="binding-curve"></div>
     <div>
-        <label for="kd">K<sub>d</sub</label>
+        <label for="kd">K<sub>d</sub></label>
         <input type="range" id="kd" value=1>
     </div>
     <div>
@@ -58,7 +58,7 @@ $$\beta(r)=\frac{\beta_0}{1 + r/K_d}+\alpha_0$$
 <div class="graph">
     <div id="binding-curve-leaky"></div>
     <div>
-        <label for="leaky-kd">K<sub>d</sub</label>
+        <label for="leaky-kd">K<sub>d</sub></label>
         <input type="range" id="leaky-kd" value=1>
     </div>
     <div>
