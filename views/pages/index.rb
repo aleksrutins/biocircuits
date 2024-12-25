@@ -5,12 +5,12 @@ module BC
     module Pages
       class Index < ::Phlex::HTML
         def sections = {
-          "1. Concepts of Biocircuits" => "/concepts",
-          "2. The Simplest Circuit" => "/simplest-circuit",
-          "3. Repressors & Leaks" => "/repressors",
-          "4. Activators" => "/activators",
-          "5. Ultrasensitivity & the Hill Function" => "/hill-functions",
-          "6. Choosing Between Activators & Repressors" => "/activators-vs-repressors"
+          "1. Concepts of Biocircuits" => "/concepts.html",
+          "2. The Simplest Circuit" => "/simplest-circuit.html",
+          "3. Repressors & Leaks" => "/repressors.html",
+          "4. Activators" => "/activators.html",
+          "5. Ultrasensitivity & the Hill Function" => "/hill-functions.html",
+          "6. Choosing Between Activators & Repressors" => "/activators-vs-repressors.html"
         }
 
         def view_template

@@ -33,7 +33,7 @@ module BC
                 yield
                 footer do
                   p do
-                    span { "&copy; 2024" }
+                    plain "© 2024 "
                     a(href: "https://farthergate.com") { "Aleks Rūtiņš" }
                   end
 

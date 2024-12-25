@@ -1,19 +1,21 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    markly (0.12.1)
+    kramdown (2.5.1)
+      rexml (>= 3.3.9)
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     phlex (1.11.0)
-    phlex-markdown (0.3.0)
-      markly (~> 0.7)
-      phlex (>= 0.5)
     phlexite (0.1.3)
+    rexml (3.4.0)
 
 PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  kramdown (~> 2.5)
+  kramdown-parser-gfm (~> 1.1)
   phlex (~> 1.11)
-  phlex-markdown (~> 0.3.0)
   phlexite (~> 0.1.3)
 
 BUNDLED WITH
