@@ -38,7 +38,7 @@ module BC
                   end
 
                   p {
-                    plain "Built with"
+                    plain "Built with "
                     a(href: "https://docs.farthergate.com/s/phlexite") { "Phlexite" }
                     plain ", " 
                     a(href: "https://mauriciopoppe.github.io/function-plot/") { "Function Plot" }
