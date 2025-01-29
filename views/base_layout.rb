@@ -37,13 +37,20 @@ module BC
                     a(href: "https://farthergate.com") { "Aleks Rūtiņš" }
                   end
 
-                  unsafe_raw {
-<<EOF
-<p>Built with <a href="https://cheetah.farthergate.com">Cheetah</a>, <a href="https://mauriciopoppe.github.io/function-plot/">Function Plot</a>, and <a href="https://katex.org/">$\KaTeX$</a></p>
-<p>
-    With the exception of pasted graphics, where the source is noted, this work is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution License CC BY-NC-SA 4.0</a>. All code contained herein is licensed under an <a href="https://opensource.org/license/mit">MIT license</a>.
-</p>
-EOF
+                  p {
+                    plain "Built with"
+                    a(href: "https://docs.farthergate.com/s/phlexite") { "Phlexite" }
+                    plain ", " 
+                    a(href: "https://mauriciopoppe.github.io/function-plot/") { "Function Plot" }
+                    plain ", and "
+                    a(href: "https://katex.org/") { "$\KaTeX$" }
+                  }
+                  p {
+                    plain "With the exception of pasted graphics, where the source is noted, this work is licensed under a "
+                    a(href: "https://creativecommons.org/licenses/by-nc-sa/4.0/") {"Creative Commons Attribution License CC BY-NC-SA 4.0" }
+                    plain ". All code contained herein is licensed under an "
+                    a(href: "https://opensource.org/license/mit") { "MIT license" }
+                    plain "."
                   }
                 end
               end
