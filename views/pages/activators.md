@@ -13,10 +13,11 @@ For activators, we have a different curve (seen below in red, contrasted to the 
 
 $$\beta(a)=\beta_0\frac{p_\text{bound}}{p_\text{tot}}=\beta_0\frac{a/K_d}{1 + a/K_d}$$
 
+
 <div class="graph">
     <div id="binding-curve"></div>
     <div>
-        <label for="kd">K<sub>d</sub</label>
+        <label for="kd">K<sub>d</sub></label>
         <input type="range" id="kd" value=1>
     </div>
     <div>
