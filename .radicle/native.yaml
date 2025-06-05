@@ -1,0 +1,3 @@
+shell: |
+  podman run -it -v .:/site:z quay.io/aspr/phlexite:latest
+  cp -r _build/* /srv/biocircuits/
